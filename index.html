@@ -16,6 +16,10 @@
                 font-family: 'Merienda', cursive;
             }
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 
     <title>Flesh & Vine</title>
@@ -27,13 +31,13 @@
         <a href="index.html" class="logo"><img width="100rem" src="" alt="">Flesh & Vine</a>
 
         <ul class="flex flex-col p-2 md:p-0 mt-4 font-thin rounded-lg md:space-x-8 md:flex-row md:mt-0">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Specials</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Chefs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Home</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#menu">Menu</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Specials</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Events</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Chefs</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Gallery</a></li>
+            <li><a class="hover:text-[#cca45e]" href="#">Contact</a></li>
         </ul>
 
         <a href="#"><button type="button"
@@ -47,10 +51,10 @@
         <h1 class="font-merienda font-bold text-start mb-6 text-6xl">Savor Every <span
                 class="text-[#cca45e]">Bite.</span> <br> Discover Culinary Perfection.</h1>
         <div class="">
-            <a href="menu.html"></a><button
+            <a href="#menu-header"></a><button
                 class="bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-xl mb-1 rounded-full py-1 px-4">OUR
                 MENU</button></a>
-            <a href="menu.html"></a><button
+            <a href="#menu-header"></a><button
                 class="bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-xl mb-1 rounded-full py-1 px-4">BOOK
                 A TABLE</button></a>
             <div class="flex items-center justify-center pt-28">
@@ -62,180 +66,203 @@
 
         </div>
     </section>
-    <section class="pt-20 px-36 bg-[#0d0c0a] opacity-80 h-[100vh] my-10">
-        <div class="flex flex-col">
-            <p class="font-normal text-gray-200">MENU</p>
-            <hr class="w-28 mt-2 border-2">
+<section id="menu" class="pt-20 px-36 bg-[#0d0c0a] opacity-80">
+    <div class="flex flex-col">
+        <p class="font-normal text-gray-200">MENU</p>
+        <hr class="w-28 mt-2 border-2">
+    </div>
+    <h3 class="mt-2 text-3xl font-semibold text-[#cca45e]">Check Our Tasty Menu</h3>
+    <div id="menu-header" class="flex bg-opacity-50 w-full z-50 items-center justify-around h-[10vh]">
+        <ul class="flex flex-col p-2 md:p-0 mt-4 font-thin rounded-lg md:space-x-8 md:flex-row md:mt-0">
+            <li><a href="#" class="hover:text-[#cca45e] hover:border-b border-[#cca45e] hover:border-b-2 font-normal text-2xl">All</a></li>
+            <li><a href="#" class="hover:text-[#cca45e] hover:border-b border-[#cca45e] hover:border-b-2 font-normal text-2xl">Starters</a></li>
+            <li><a href="#" class="hover:text-[#cca45e] hover:border-b border-[#cca45e] hover:border-b-2 font-normal text-2xl">Salads</a></li>
+            <li><a href="#" class="hover:text-[#cca45e] hover:border-b border-[#cca45e] hover:border-b-2 font-normal text-2xl">Specialty</a></li>
+        </ul>
+    </div>
+
+    <div class="container grid grid-cols-3 gap-2 mt-14">
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="1.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
         </div>
-        <h3 class="mt-2 text-3xl font-semibold text-[#cca45e]">Check Our Tasty Menu</h3>
-
-        <div id="menu-header" class=" flex bg-opacity-50 w-full z-50 items-center justify-around h-[10vh]">
-            <ul class="flex flex-col p-2 md:p-0 mt-4 font-thin rounded-lg md:space-x-8 md:flex-row md:mt-0">
-                <li><a href="#" class="hover:text-[#cca45e] hover:border-b hover:duration-300 border-[#cca45e] hover:border-b-2 font-normal">All</a></li>
-                <li><a href="#" class="hover:text-[#cca45e] hover:border-b hover:duration-300 border-[#cca45e] hover:border-b-2 font-normal">Starters</a></li>
-                <li><a href="#" class="hover:text-[#cca45e] hover:border-b hover:duration-300 border-[#cca45e] hover:border-b-2 font-normal">Salads</a></li>
-                <li><a href="#" class="hover:text-[#cca45e] hover:border-b hover:duration-300 border-[#cca45e] hover:border-b-2 font-normal">Specialty</a></li>
-            </ul>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="3.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
         </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="2.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="2.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="3.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="4.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="5.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="6.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="7.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        <div class="card w-[22rem] h-[20rem] flex flex-col">
+            <a href="#" class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                <div class="h-[17rem] w-full overflow-hidden rounded">
+                    <img src="8.jpg" alt="Place Image" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name</h2>
+                <p class="text-black font-thin mt-2">
+                    Location
+                    <span class="text-black font-medium float-right p-1 hover:scale-110">$115</span>
+                </p>
+            </a>
+        </div>
+        
+        
+    </div>
+</section>
 
-
-    </section>
-
-
-    <section class="bg-[#0d0c0a] opacity-80">
-        <div id="booking" class="relative z-10 -mt-16 mx-auto bg-[#0f0b08] bg-opacity-30 shadow-lg rounded-lg w-[80%]">
-            <div class="grid grid-cols-3 gap-6 px-6 py-4">
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2">Full Name</label>
-                    <input
-                        class="p-3 bg-[#0f0b08] border border-[#cca45e] text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
-                        type="text" placeholder="Name & Last Name">
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2">Email</label>
-                    <input name="BookerEmail"
-                        class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
-                        type="email" placeholder="email@mail.com">
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2">Phone</label>
-                    <input name="BookerPhone"
-                        class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
-                        type="number" placeholder="+212 65645588">
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2"># of People</label>
-                    <input name="NumberOfPeople"
-                        class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
-                        type="number" placeholder="05">
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2">Date</label>
-                    <input name="BookingDate"
-                        class="bg-[#0f0b08]   p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
-                        type="date">
-                </div>
-                <div class="flex flex-col">
-                    <label class="text-white text-sm font-medium mb-2">Menu</label>
-                    <select name="BookingMenu"
-                        class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]">
-                        <option value="">Select a menu</option>
-                        <option value="menu1">Menu 1</option>
-                        <option value="menu2">Menu 2</option>
-                        <option value="menu3">Menu 3</option>
-                    </select>
-                </div>
+<section id="reservation" class="pt-20 px-36 bg-[#0d0c0a] opacity-80">
+    <div class="text-start mb-10">
+        <h2 class="text-4xl font-semibold text-[#cca45e]">Reservation</h2>
+        <p class="text-gray-300 mt-4">Book a cooking session with the exquisite chef for a memorable dining experience.</p>
+    </div>
+    <div id="booking" class=" z-10 mx-auto bg-[#0f0b08] bg-opacity-30 shadow-lg rounded-lg w-[80%]">
+        <div class="grid grid-cols-3 gap-6 px-6 py-4">
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2">Full Name</label>
+                <input
+                    class="p-3 bg-[#0f0b08] border border-[#cca45e] text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
+                    type="text" placeholder="Name & Last Name">
             </div>
-            <div class="flex justify-end px-6 pb-4">
-                <button
-                    class="w-[20%] bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-[#cca45e] hover:text-white py-3 rounded-md text-sm font-medium transition-all">
-                    Book
-                </button>
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2">Email</label>
+                <input name="BookerEmail"
+                    class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
+                    type="email" placeholder="email@mail.com">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2">Phone</label>
+                <input name="BookerPhone"
+                    class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
+                    type="number" placeholder="+212 65645588">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2"># of People</label>
+                <input name="NumberOfPeople"
+                    class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
+                    type="number" placeholder="05">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2">Date</label>
+                <input name="BookingDate"
+                    class="bg-[#0f0b08]   p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]"
+                    type="date">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-white text-sm font-medium mb-2">Menu</label>
+                <select name="BookingMenu"
+                    class="bg-[#0f0b08] p-3 border border-[#cca45e] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#cca45e]">
+                    <option value="">Select a menu</option>
+                    <option value="menu1">Menu 1</option>
+                    <option value="menu2">Menu 2</option>
+                    <option value="menu3">Menu 3</option>
+                </select>
             </div>
         </div>
-    </section>
-
-
-
-    <section class="bg-[#0d0c0a] h-[100vh]">
-        <div class="mx-48 mt-14 mb-12">
-        <div class="flex flex-row justify-between">
-            <div>
-                <h2 class="text-white text-2xl font-bold">Special Offers</h2>
-                <hr class="bg-blue-800 mt-5 p-0.5 w-12">
-            </div>
-            <p class="text-white justify-end">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Porro
-                deleniti laborum assumenda, <br> impedit saepe odit vitae perferendis officiis dignissimos minima.</p>
-
-        </div>
-        <div class="container grid grid-cols-3 gap-2 mt-5">
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="1.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="2.jpg" alt="Place Image" class="w-full h-[14.rem] bg-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="3.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="3.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="3.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="3.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
-            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
-                <a href="#"
-                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
-                    <img src="3.jpg" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
-                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
-                    </h2>
-                    <p class="text-black font-thin mt-2">
-                        Location <span
-                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
-                    </p>
-                </a>
-            </div>
+        <div class="flex justify-end px-6 pb-4">
+            <button
+                class="w-[20%] bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-[#cca45e] hover:text-white py-3 rounded-md text-sm font-medium transition-all">
+                Book
+            </button>
         </div>
     </div>
-    </section>
+</section>
 
 
 
