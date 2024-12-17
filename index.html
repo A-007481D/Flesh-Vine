@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&family=Poppins:wght@500&family=Sansita+Swashed:wght@300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @layer utilities {
+            .font-merienda {
+                font-family: 'Merienda', cursive;
+            }
+        }
+    </style>
+
+    <title>MagiCuisine</title>
+</head>
+
+<body class="text-white bg-[url('background.jpg')] bg-cover bg-fixed ">
+    <header id="header"
+        class="fixed top-0 flex bg-gray-700 bg-opacity-50 w-full z-50 items-center justify-around h-[10vh]">
+        <a href="index.html" class="logo"><img width="100rem" src="" alt="">Flesh & Vine</a>
+
+        <ul class="flex flex-col p-2 md:p-0 mt-4 font-thin rounded-lg md:space-x-8 md:flex-row md:mt-0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Chefs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <a href="login.html"><button type="button"
+                class="text-white bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] hidden sm:inline-block focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center">Sign
+                in</button></a>
+
+
+    </header>
+
+    <section id="home"
+        class="pt-20 px-36 h-[109vh] text-white flex flex-col justify-center">
+        <h1 class="font-merienda font-bold text-start mb-6 text-6xl">Savor Every <span
+                class="text-[#cca45e]">Bite.</span> <br> Discover Culinary Perfection.</h1>
+        <div class="">
+            <a href="menu.html"></a><button
+                class="bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-xl mb-1 rounded-full py-1 px-4">OUR
+                MENU</button></a>
+            <a href="menu.html"></a><button
+                class="bg-transparent hover:bg-[#cca45e] border-solid border-2 border-[#cca45e] text-xl mb-1 rounded-full py-1 px-4">BOOK
+                A TABLE</button></a>
+            <div class="flex items-center justify-center pt-28">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce text-center" fill="none"
+                    viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+
+        </div>
+    </section>
+    <div id="booking" class="relative z-10 -mt-16 mx-auto bg-[#0f0b08] bg-opacity-30 shadow-lg rounded-lg w-[80%]">
+        <div class="grid grid-cols-3 gap-6 px-6 py-4">
+            <!-- Full Name -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2">Full Name</label>
+                <input class="p-3 border border-gray-300 text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="text" placeholder="Name & Last Name">
+            </div>
+            <!-- Email -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2">Email</label>
+                <input name="BookerEmail" class="p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="email" placeholder="email@mail.com">
+            </div>
+            <!-- Phone -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2">Phone</label>
+                <input name="BookerPhone" class="p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="number" placeholder="+212 65645588">
+            </div>
+            <!-- Number of People -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2"># of People</label>
+                <input name="NumberOfPeople" class="p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="number" placeholder="05">
+            </div>
+            <!-- Date -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2">Date</label>
+                <input name="BookingDate" class="p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="date">
+            </div>
+            <!-- Menu -->
+            <div class="flex flex-col">
+                <label class="text-gray-500 text-sm font-medium mb-2">Menu</label>
+                <select name="BookingMenu" class="p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="">Select a menu</option>
+                    <option value="menu1">Menu 1</option>
+                    <option value="menu2">Menu 2</option>
+                    <option value="menu3">Menu 3</option>
+                </select>
+            </div>
+        </div>
+        <!-- Book Button -->
+        <div class="flex justify-end px-6 pb-4">
+            <button
+                class="w-[20%] bg-transparent hover:bg-[#cca45e] text-[#cca45e] hover:text-white py-3 rounded-md text-sm font-medium transition-all">
+                Book
+            </button>
+        </div>
+    </div>
+    
+
+
+    <section class="mx-48 mt-14 mb-12">
+        <div class="flex flex-row justify-between">
+            <div>
+                <h2 class="text-black text-2xl font-bold">Special Offers</h2>
+                <hr class="bg-blue-800 mt-5 p-0.5 w-12">
+            </div>
+            <p class="text-black justify-end">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Porro
+                deleniti laborum assumenda, <br> impedit saepe odit vitae perferendis officiis dignissimos minima.</p>
+
+        </div>
+        <div class="container grid grid-cols-3 gap-2 mt-5">
+            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
+                <a href="#"
+                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                    <img src="img/bluewp.png" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
+                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
+                    </h2>
+                    <p class="text-black font-thin mt-2">
+                        Location <span
+                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
+                    </p>
+                </a>
+            </div>
+            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
+                <a href="#"
+                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                    <img src="img/bluewp.png" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
+                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
+                    </h2>
+                    <p class="text-black font-thin mt-2">
+                        Location <span
+                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
+                    </p>
+                </a>
+            </div>
+            <div class="card w-[22rem] flex-shrink-0 h-[20rem] flex flex-col">
+                <a href="#"
+                    class="bg-white p-2 rounded-lg border shadow-lg hover:scale-[1.01] duration-300 h-full flex flex-col">
+                    <img src="img/bluewp.png" alt="Place Image" class="w-full h-[30rem] object-cover rounded">
+                    <h2 class="text-lg font-medium text-black mt-2 flex-grow">Place Name
+                    </h2>
+                    <p class="text-black font-thin mt-2">
+                        Location <span
+                            class="text-black font-medium float-right rounded object-contain p-1 hover:scale-110">$115</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
