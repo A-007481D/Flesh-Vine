@@ -1,0 +1,1 @@
+// regex validation for all the forms 
